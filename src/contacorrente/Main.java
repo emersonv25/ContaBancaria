@@ -2,7 +2,7 @@
  *  Autor: Emerson de Jesus Santos
  *  Mat: 16017157
  *  Formando em Analise e desenvolvimento de sistemas
- *  Centro Universitário Maurício de Nassau
+ *  Centro UniversitÃ¡rio MaurÃ­cio de Nassau
  *  
  */
 
@@ -24,28 +24,26 @@ public class Main {
 	public static void main(String[] args) 
 	{
 
-		contas.add(new ContaCorrente(1111, "Emerson", 500));
-		contas.add(new ContaCorrente(2222, "Jessica"));
 
 		
 		while (true)
 		{
-			Menu menu = new Menu(); // cria um objeto da classe Menu para usar os metodos não-estaticos
-			//Menu.printMenu(); // printa o MENU de opções
+			Menu menu = new Menu(); // cria um objeto da classe Menu para usar os metodos nÃ£o-estaticos
+			//Menu.printMenu(); // printa o MENU de opÃ§Ãµes
 		
-			int opcao = Keyboard.menu("Cadastrar Contas/Listar Contas/Excluir Contas/Efetuar Depósitos/"
-					+ "Efetuar Saques/Consultar Conta/Efetuar transferência entre contas/Sair");
+			int opcao = Keyboard.menu("Cadastrar Contas/Listar Contas/Excluir Contas/Efetuar DepÃ³sitos/"
+					+ "Efetuar Saques/Consultar Conta/Efetuar transferÃªncia entre contas/Sair");
 			
 			
 			
-			// switch de opções
+			// switch de opÃ§Ãµes
 			switch(opcao)
 			{
 				case 1:		
 					menu.cadastrar(contas);
 					enter();
 					break;
-				// caso 2, listará o número de contas
+				// caso 2, listarÃ¡ o nÃºmero de contas
 				case 2:
 					menu.listar(contas);	
 					enter();
@@ -75,7 +73,7 @@ public class Main {
 					break;
 					
 				default:
-					print("Opção Inválida!");
+					print("OpÃ§Ã£o InvÃ¡lida!");
 					break;
 		
 				
@@ -86,7 +84,7 @@ public class Main {
 		
 	}
 	
-	// Uma função para organizar o print
+	// Uma funÃ§Ã£o para organizar o print
 	static void print(Object text)
 	{
 		System.out.println(text);

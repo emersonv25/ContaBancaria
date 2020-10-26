@@ -1,3 +1,4 @@
 # ContaBancaria
+
 @author emersonv25, matheus55391
-Um sistema de banco feito em Java
+Atividade da materia de poo e banco de dados feito em Java
